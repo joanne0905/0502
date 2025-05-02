@@ -41,7 +41,7 @@ function updateGraphics() {
 
       // 繪製方框
       graphics.fill(col);
-      graphics.noStroke();
+      
       graphics.rect(x, y, 18, 18); // 繪製寬高為 18 的方框
 
       // 在方框中繪製黑色圓
