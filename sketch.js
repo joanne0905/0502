@@ -39,9 +39,15 @@ function updateGraphics() {
     for (let y = 0; y < video.height; y += 20) {
       let col = video.get(x, y); // 擷取 video 中相對位置的顏色
 
+      // 計算灰階顏色
+      let r = red(col);
+      let g = green(col);
+      let b = blue(col);
+      let gray = (r + g + b) / 3;
+
       // 繪製方框
-      graphics.fill(col);
-      
+      graphics.fill(gray); // 使用灰階顏色
+      graphics.noStroke();
       graphics.rect(x, y, 18, 18); // 繪製寬高為 18 的方框
 
       // 在方框中繪製黑色圓
