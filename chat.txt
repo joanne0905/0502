@@ -1,0 +1,6 @@
+說明：
+createCanvas(windowWidth, windowHeight)：建立全螢幕畫布。
+createCapture(VIDEO)：啟用攝影機並擷取影像。
+video.size(windowWidth * 0.8, windowHeight * 0.8)：設定影像大小為視窗的 80%。
+image(video, (width - video.width) / 2, (height - video.height) / 2)：將影像繪製在畫布中間。
+windowResized：當視窗大小改變時，動態調整畫布與影像大小。
