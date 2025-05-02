@@ -38,9 +38,15 @@ function updateGraphics() {
   for (let x = 0; x < video.width; x += 20) {
     for (let y = 0; y < video.height; y += 20) {
       let col = video.get(x, y); // 擷取 video 中相對位置的顏色
+
+      // 繪製方框
       graphics.fill(col);
       graphics.noStroke();
-      graphics.ellipse(x + 10, y + 10, 15, 15); // 繪製寬高為 15 的圓
+      graphics.rect(x, y, 18, 18); // 繪製寬高為 18 的方框
+
+      // 在方框中繪製黑色圓
+      graphics.fill(0); // 設定圓的顏色為黑色
+      graphics.ellipse(x + 9, y + 9, 5, 5); // 繪製直徑為 5 的圓，位於方框中心
     }
   }
 }
