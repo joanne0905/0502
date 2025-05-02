@@ -16,12 +16,12 @@ function draw() {
   background(220);
 
   // 顯示 video
-  translate(width / 2, height / 2); // 將原點移到畫布中心
-  scale(-1, 1); // 水平翻轉影像
-  image(video, -video.width / 2, -video.height / 2); // 繪製影像，居中顯示
+  //translate(width / 2, height / 2); // 將原點移到畫布中心
+  //scale(-1, 1); // 水平翻轉影像
+  //image(video, -video.width / 2, -video.height / 2); // 繪製影像，居中顯示
 
   // 顯示 graphics 在 video 上方
-  image(graphics, -video.width / 2, -video.height / 2);
+  //image(graphics, -video.width / 2, -video.height / 2);
 }
 
 function windowResized() {
